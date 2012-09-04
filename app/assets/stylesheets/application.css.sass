@@ -1,0 +1,72 @@
+//= require_self
+
+@import compass
+@import url('http://fonts.googleapis.com/css?family=Lobster')
+
++global_reset
+
+body
+  font-size: 16px
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  text-align: center
+  color: #333
+  background: #fff
+
+h1
+  position: relative
+  display: block
+  font-family: 'Lobster', cursive
+  font-size: 4em
+  margin: 0 0 0.5em
+
+  padding: 10px 0
+  width: 100%
+  +box-shadow(0 0 10px rgba(#000, 0.5))
+
+h2
+  font-family: 'Lobster', cursive
+  font-size: 2em
+  margin: 0 0 1em
+
+p
+  line-height: 1.5em
+  margin: 0
+
+form div
+  margin: 0 0 1em
+
+label
+  +inline-block
+  width: 250px
+  margin: 0 0 0.25em
+  text-align: left
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"]
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-size: 14px
+
+input[type="text"],
+input[type="email"],
+input[type="password"]
+  background: #fff
+  border: 1px solid #ccc
+  width: 250px
+  padding: 5px
+  +border-radius(2px)
+
+input[type="submit"]
+  +inline-block
+  width: auto
+  height: auto
+  padding: 5px 30px
+  margin: 0
+  color: #fff
+  text-align: center
+  vertical-align: middle
+  cursor: pointer
+  background-color: #5BB75B
+  border: 0
+  +border-radius(2px)
