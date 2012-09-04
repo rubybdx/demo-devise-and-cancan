@@ -4,6 +4,9 @@ gem 'rails', '3.2.8'
 
 gem 'haml'
 
+gem 'devise'
+gem 'cancan'
+
 group :assets do
   gem 'sass-rails'
   gem 'compass-rails'
