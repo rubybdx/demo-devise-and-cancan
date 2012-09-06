@@ -25,6 +25,8 @@
   before_create :reset_authentication_token
   ```
 
+8. Add customized JSON response: [see also](https://github.com/blakink/demo-devise-and-cancan/commit/6a3b27bd529d874bec2048f059affd84e055513e)
+
 
 
 ## How to test the API
