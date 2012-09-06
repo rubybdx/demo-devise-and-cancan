@@ -6,6 +6,7 @@ gem 'haml'
 
 gem 'devise'
 gem 'cancan'
+gem 'rabl'
 
 group :assets do
   gem 'sass-rails'
