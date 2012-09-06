@@ -4,10 +4,23 @@
 
 2. Add to your Gemfile :
 
-    gem 'devise'
-    gem 'cancan'
-    gem 'rabl'
+  ```ruby
+  gem 'devise'
+  gem 'cancan'
+  gem 'rabl'
+  ```
 
 3. `bundle install`
 
 4. `rails g devise:install`
+
+
+5. `rails g devise User`
+
+6. In the migration and the model, uncomment the lines linked to `token_authenticatable`
+
+7. To ensure creation of the auth token, you need to add to the User model:
+
+  ```ruby
+  before_create :reset_authentication_token
+  ```
