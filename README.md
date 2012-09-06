@@ -1,4 +1,4 @@
-== Getting Started
+## Getting Started
 
 1. `rails new app --skip-bundle`
 
@@ -23,4 +23,26 @@
 
   ```ruby
   before_create :reset_authentication_token
+  ```
+
+
+
+## How to test the API
+
+All you need is...
+
+1. a running server: `rails s`
+2. a ruby console: `ìrb`
+
+then, you can play from the console:
+
+  ```ruby
+  > require './client.rb'
+  => true
+
+  > Client.post 'http://localhost:3000/users/sign_in', user: { email: "", password: "" }
+  => 401 Unauthorized: {"error":"You need to sign in or sign up before continuing."}
+
+  > Client.post 'http://localhost:3000/users', user: { email: "foo@example.com", password: "rubybdx" }
+  => 422 Unprocessable Entity: {"errors":{"nickname":["can't be blank"]}}
   ```
