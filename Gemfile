@@ -8,6 +8,8 @@ gem 'devise'
 gem 'cancan'
 gem 'rabl'
 
+gem 'cancan-traffic'
+
 group :assets do
   gem 'sass-rails'
   gem 'compass-rails'

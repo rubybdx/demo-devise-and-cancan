@@ -43,6 +43,21 @@
 12. Enjoy & play!
 
 
+If you want more magick, you may look at [CancanTraffic](http://github.com/blakink/cancan-traffic)
+
+13. Add to your Gemfile :
+
+  ```ruby
+  gem 'cancan-traffic'
+  ```
+
+14. and to your `ApplicationController`:
+
+  ```ruby
+  control_and_rescue_traffic
+  respond_to :json
+  ```
+
 ## How to test the API
 
 All you need is...
