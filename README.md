@@ -29,6 +29,8 @@
 
 9. Create the Comment scaffold: `rails g Comment description:text user:references` & `rails g controller Comments`
 
+10. `rails g cancan:ability`
+
 
 ## How to test the API
 
@@ -48,4 +50,14 @@ then, you can play from the console:
 
   > Client.post 'http://localhost:3000/users', user: { email: "foo@example.com", password: "rubybdx" }
   => 422 Unprocessable Entity: {"errors":{"nickname":["can't be blank"]}}
+
+  > Client.post 'http://localhost:3000/users', user: { email: "foo@example.com", password: "rubybdx", nickname: 'foo' }
+  => {"user"=>{"nickname"=>"foo", "authentication_token"=>"9haxzsm3Q1u64i3qGppi"}}
+
+  > Client.post 'http://localhost:3000/comments?auth_token=9haxzsm3Q1u64i3qGppi', comment: { description: "Hello world!" }
+  => {"comment"=>{"id"=>1, "description"=>"Hello world!"}}
+
+  > Client.get 'http://localhost:3000/comments?auth_token=9haxzsm3Q1u64i3qGppi'
+  => [{"comment"=>{"id"=>1, "description"=>"Hello world!"}}]
+
   ```
