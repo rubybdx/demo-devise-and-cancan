@@ -43,7 +43,10 @@
 12. Enjoy & play!
 
 
-If you want more magick, you may look at [CancanTraffic](http://github.com/blakink/cancan-traffic)
+
+#### If you want more magick...
+
+...you may look at [CancanTraffic](http://github.com/blakink/cancan-traffic)
 
 13. Add to your Gemfile :
 
