@@ -1,3 +1,10 @@
+## Resources
+
+* [Devise](http://github.com/plataformatec/devise)
+* [Cancan](http://github.com/ryanb/cancan)
+* [Rabl](http://github.com/nesquena/rabl/)
+
+
 ## Getting Started
 
 1. `rails new app --skip-bundle`
@@ -32,6 +39,8 @@
 10. `rails g cancan:ability`
 
 11. Complete the ability and resource load: [see also](https://github.com/blakink/demo-devise-and-cancan/commit/7efac97b4861e284f1f96c6b711e1cd946cfaa36)
+
+12. Enjoy & play!
 
 
 ## How to test the API
